@@ -1,0 +1,3 @@
+Nombre: Juan Apellido: Pérez Edad: 30
+Nombre: María Apellido: Rodríguez Edad: 25
+Nombre: Carlos Apellido: González Edad: 35
