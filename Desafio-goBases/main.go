@@ -63,6 +63,10 @@ func main() {
 	fmt.Printf("Personas en mañana: %d\n", mañana)
 	fmt.Printf("Personas en tarde: %d\n", tarde)
 	fmt.Printf("Personas en noche: %d\n", noche)
+
+	// Calcular el promedio de personas que viajan a un pais
+	average := tickets.AverageDestination(destination, ticketList)
+	fmt.Printf("Promedio de personas que viaja a %s: %.2f%%\n", destination, average)
 }
 
 func parseInt(s string) int {

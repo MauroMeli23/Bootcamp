@@ -1,6 +1,8 @@
 package tickets
 
-import "time"
+import (
+	"time"
+)
 
 type Ticket struct {
 	ID         int
@@ -32,7 +34,8 @@ func CountPeopleByTimeRange(ticketList []Ticket, startHour, endHour int) int {
 	return count
 }
 
-// ejemplo 3
-//func AverageDestination(destination string, ticketList []Ticket) int {
-//	count := GetTotalTickets(destination, ticketList)
-//}
+func AverageDestination(destination string, ticketList []Ticket) float64 {
+	count := GetTotalTickets(destination, ticketList)
+	var average = float64(count) / float64(len(ticketList)) * 100
+	return average
+}
