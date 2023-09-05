@@ -15,7 +15,6 @@ func main() {
 	defer file.Close()
 
 	var content bytes.Buffer
-
 	_, err = io.Copy(&content, file)
 	if err != nil {
 		fmt.Println("Error al leer el archivo:", err)
